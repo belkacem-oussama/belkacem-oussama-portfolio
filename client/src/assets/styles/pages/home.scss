@@ -1,0 +1,12 @@
+.home-container {
+  border: solid red;
+
+  @media (max-width: 480px) {
+    padding: 5px;
+  }
+
+  &-main {
+    border: solid blue;
+    text-align: center;
+  }
+}

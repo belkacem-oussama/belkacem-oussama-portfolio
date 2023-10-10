@@ -1,11 +1,8 @@
-import "../assets/styles/styles.scss";
-
 export default function Home() {
   return (
     <div className="home-container">
       <div className="home-container-main">
-        <h1>BELKACEM Oussama</h1>
-        <h5>Front-End Developer</h5>
+        <h1>Front-End Developer</h1>
         <p>Je fais ce que j'aime !</p>
       </div>
       <div className="home-container-presentation">
