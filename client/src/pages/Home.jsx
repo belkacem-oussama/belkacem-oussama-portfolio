@@ -1,6 +1,10 @@
+import "../assets/styles/styles.scss";
+import Logo from "../assets/img/portfolio-logo.png";
+
 export default function Home() {
   return (
     <div className="home-container">
+      <img src={Logo} />
       <div className="home-container-main">
         <h1>BELKACEM Oussama</h1>
         <h5>Front-End Developer</h5>
