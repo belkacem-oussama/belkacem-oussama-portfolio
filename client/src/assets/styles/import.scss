@@ -1,0 +1,17 @@
+//Main
+@import "./main.scss";
+
+//Pages
+@import "../styles/pages/home.scss";
+
+// Components
+@import "../styles/components/button.scss";
+@import "../styles/components/loader.scss";
+
+// Layouts
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+
+//Assets
+@import "./img/icones.scss";
+@import "./img//img.scss";

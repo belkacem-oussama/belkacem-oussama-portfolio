@@ -1,0 +1,15 @@
+@import "../_vars";
+
+.footer-component {
+  background-color: $primary-color;
+  color: $secondary-color;
+  &-socials {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    .socials {
+      margin-left: 10px;
+    }
+  }
+}
