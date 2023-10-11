@@ -173,7 +173,7 @@ export default function Home() {
       </span>
 
       <div className="home-container-question">
-        <h4>Une question ? Un message.</h4>
+        <h4>Une question ? Un message !</h4>
       </div>
     </div>
   );
