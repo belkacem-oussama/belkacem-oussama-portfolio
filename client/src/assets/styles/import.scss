@@ -4,8 +4,13 @@
 //Pages
 @import "../styles/pages/home.scss";
 
+// Components
+@import "../styles//components/button.scss";
+
 // Layouts
 @import "./layouts/header.scss";
+@import "./layouts/footer.scss";
 
 //Assets
 @import "./img/icones.scss";
+@import "./img//img.scss";
