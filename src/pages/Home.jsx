@@ -41,14 +41,26 @@ export default function Home() {
         }
     }, [])
 
+    let globalJson = text
     // For Stack Part
-    let jsonInfos = text.stack
-    let jsonArray = Object.values(jsonInfos)
+    let stackInfos = globalJson.stack
+    let stackArray = Object.values(stackInfos)
 
     const imgInfo = {
         FrontEnd: FrontEnd,
         BackEnd: BackEnd,
         Tools: Tools,
+    }
+
+    // For Project Part
+    let projectData = globalJson.projects.project
+    let projectArray = Object.values(projectData)
+
+    const projectImgInfo = {
+        WTM: WTM,
+        CotizUpImg: CotizUpImg,
+        EurAfrique: EurAfrique,
+        ConjugEasy: ConjugEasy,
     }
 
     return (
@@ -70,7 +82,7 @@ export default function Home() {
             </div>
             <div className="home-container-stack">
                 <div className="home-container-stack-container">
-                    {jsonArray.map((element, index) => (
+                    {stackArray.map((element, index) => (
                         <div className="item" key={index}>
                             <div className="item-container">
                                 <img
@@ -91,76 +103,25 @@ export default function Home() {
                 </div>
             </div>
             <div className="home-container-projects">
-                <h1>Projets réalisés</h1>
-                <p>Quelques projets auxquels j'ai pu participer ou créer.</p>
+                <h1>{text.projects.title}</h1>
+                <p>{text.projects.paragraphe}</p>
                 <div className="home-container-projects-container">
-                    <div className="project">
-                        <div className="project-container">
-                            <img src={WTM} />
-                            <h3>What's The Movie </h3>
-                            <span>
-                                <p>
-                                    {' '}
-                                    Jeu développé dans un groupe de 6
-                                    développeurs.
-                                </p>
-                                <a
-                                    href="https://whats-the-movie.timothe-bequet.fr/"
-                                    target="blank"
-                                >
-                                    <ButtonComponent text="Visit website" />
-                                </a>
-                            </span>
+                    {projectArray.map((element, key) => (
+                        <div className="project" key={key}>
+                            <div className="project-container">
+                                <img src={projectImgInfo[element.img]} />
+                                <h3>{element.title} </h3>
+                                <span>
+                                    <p>{element.presentation}</p>
+                                    <a href={element.link} target="blank">
+                                        <ButtonComponent
+                                            text={element.buttonText}
+                                        />
+                                    </a>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="project">
-                        <div className="project-container">
-                            <img src={CotizUpImg} />
-                            <h3>Cotiz'Up </h3>
-                            <span>
-                                <p>Amélioration du back-office existant.</p>
-                                <a
-                                    href="https://www.cotizup.com/"
-                                    target="blank"
-                                >
-                                    <ButtonComponent text="Visit website" />
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="project">
-                        <div className="project-container">
-                            <img src={EurAfrique} alt="" />
-                            <h3>EurAfrique</h3>
-                            <span>
-                                <p>
-                                    Mise en place d'une liste de gestion des
-                                    bénévoles.
-                                </p>
-                                <a
-                                    href="https://dev.eurafrique.eu/"
-                                    target="blank"
-                                >
-                                    <ButtonComponent text="Visit website" />
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="project">
-                        <div className="project-container">
-                            <img src={ConjugEasy} alt="" />
-                            <h3>ConjugEasy</h3>
-                            <span>
-                                <p>Passage de ceinture de conjugaison.</p>
-                            </span>
-                            <a
-                                href="https://github.com/belkacem-oussama/ConjugEasy-Front"
-                                target="blank"
-                            >
-                                <ButtonComponent text="View repo" />
-                            </a>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
             <span className="github-button">
