@@ -1,6 +1,7 @@
 import React from 'react'
 import ButtonComponent from '../components/Button.jsx'
 import { useEffect } from 'react'
+
 import Typed from 'typed.js'
 
 import text from '../assets/json/text.json'
@@ -63,6 +64,8 @@ export default function Home() {
         ConjugEasy: ConjugEasy,
     }
 
+    // For
+
     return (
         <div className="home-container">
             <div className="home-container-main typed-output">
@@ -89,10 +92,10 @@ export default function Home() {
                                     src={imgInfo[element.img]}
                                     alt={element.mainTitle}
                                 />
-                                <h1>{element.mainTitle}</h1>
+                                <h1>{element.title}</h1>
                                 <p>{element.paragraphe}</p>
                                 <ul>
-                                    <h1>Langages</h1>
+                                    <h1>{element.mainTitle}</h1>
                                     {element.list.map((key, index) => (
                                         <li key={index}>{key}</li>
                                     ))}
@@ -125,13 +128,13 @@ export default function Home() {
                 </div>
             </div>
             <span className="github-button">
-                <a href="https://github.com/belkacem-oussama" target="blank">
-                    <ButtonComponent text="More on GitHub !" />
+                <a href={text.others.ghButtonLink} target="blank">
+                    <ButtonComponent text={text.others.ghButtonText} />
                 </a>
             </span>
 
             <div className="home-container-question">
-                <h4>Une question ? Un message !</h4>
+                <h4>{text.others.textBottom}</h4>
             </div>
         </div>
     )

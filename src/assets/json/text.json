@@ -59,5 +59,10 @@
                 "buttonText": "View repo"
             }
         }
+    },
+    "others": {
+        "ghButtonLink": "https://github.com/belkacem-oussama",
+        "ghButtonText": "More on GitHub !",
+        "textBottom": "Une question ? Un message !"
     }
 }
