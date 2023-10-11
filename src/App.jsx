@@ -8,25 +8,25 @@ import Loader from "./components/Loader.jsx";
 import "./assets/styles/import.scss";
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-  }, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 4000)
+    }, [])
 
-  return (
-    <>
-      {isLoading ? (
-        <Loader />
-      ) : (
+    return (
         <>
-          <Header />
-          <Home />
-          <Footer />
+            {isLoading ? (
+                <Loader />
+            ) : (
+                <>
+                    <Header />
+                    <Home />
+                    <Footer />
+                </>
+            )}
         </>
-      )}
-    </>
-  );
+    )
 }

@@ -1,0 +1,68 @@
+{
+    "title": "BELKACEM Oussama",
+    "hello": "Hey, Salut, Salam !",
+    "introduction": "Moi c'est Oussama, enchanté !",
+    "presentation": "Depuis le début de mon parcours en tant que dévelopeur, j'ai effectué des prestations à distance pour des sociétés commerciales, consulté pour des clients dans l'enseignement et collaboré avec des personnes talentueuses pour créer des produits numériques à la fois pour un usage professionnel et grand public. Je suis naturellement curieux et je travaille constamment l'amélioration de mes compétences.",
+    "stack": {
+        "front-end": {
+            "img": "FrontEnd",
+            "title": "Front-End Developer.",
+            "paragraphe": "UX/UI",
+            "mainTitle": "Langages",
+            "list": ["HTML/CSS/SCSS", "JavaScript", "React.js"]
+        },
+        "back-end": {
+            "img": "BackEnd",
+            "title": "Back-End Developer",
+            "paragraphe": "Données et sécurité.",
+            "mainTitle": "Langages",
+            "list": ["PHP", "Symfony/Laravel", "SQL"]
+        },
+        "dev-tools": {
+            "img": "Tools",
+            "title": "Dev Tools",
+            "paragraphe": "Ma trousse à outils.",
+            "mainTitle": "Langages",
+            "list": ["Docker", "Git/GitHub", "Bootstrap"]
+        }
+    },
+    "projects": {
+        "title": "Projets réalisés",
+        "paragraphe": "Quelques projets auxquels j'ai pu participer ou créer.",
+        "project": {
+            "First": {
+                "title": "What's The Movie ?",
+                "img": "WTM",
+                "presentation": "Jeu développé dans un groupe de 6 développeurs.",
+                "link": "https://whats-the-movie.timothe-bequet.fr/",
+                "buttonText": "Visit Website"
+            },
+            "Second": {
+                "title": "Cotiz'Up",
+                "img": "CotizUpImg",
+                "presentation": "Amélioration du back-office existant.",
+                "link": "https://www.cotizup.com/",
+                "buttonText": "Visit Website"
+            },
+            "Third": {
+                "title": "EurAfrique",
+                "img": "EurAfrique",
+                "presentation": "Mise en place d'une liste de gestion des  bénévoles.",
+                "link": "https://dev.eurafrique.eu/",
+                "buttonText": "Visit Website"
+            },
+            "Fourth": {
+                "title": "ConjugEasy",
+                "img": "ConjugEasy",
+                "presentation": "Passage de ceinture de conjugaison.",
+                "link": "https://github.com/belkacem-oussama/ConjugEasy-Front",
+                "buttonText": "View repo"
+            }
+        }
+    },
+    "others": {
+        "ghButtonLink": "https://github.com/belkacem-oussama",
+        "ghButtonText": "More on GitHub !",
+        "textBottom": "Une question ? Un message !"
+    }
+}
