@@ -131,10 +131,7 @@ export default function Home() {
               <h3>Cotiz'Up </h3>
               <span>
                 <p>Amélioration du back-office existant.</p>
-                <a
-                  href="https://whats-the-movie.timothe-bequet.fr/"
-                  target="blank"
-                >
+                <a href="https://www.cotizup.com/" target="blank">
                   <ButtonComponent text="Visit website" />
                 </a>
               </span>
