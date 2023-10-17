@@ -57,6 +57,13 @@
                 "presentation": "Passage de ceinture de conjugaison.",
                 "link": "https://github.com/belkacem-oussama/ConjugEasy-Front",
                 "buttonText": "View repo"
+            },
+            "Fifth": {
+                "title": "Mawaqit",
+                "img": "Mawaqit",
+                "presentation": "Support technique bénévole",
+                "link": "https://mawaqit.net/fr/",
+                "buttonText": "View Website"
             }
         }
     },

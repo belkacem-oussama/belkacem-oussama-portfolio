@@ -15,6 +15,7 @@ import WTM from '../assets/img/whats-the-movie.png'
 import CotizUpImg from '../assets/img/cotizup.png'
 import EurAfrique from '../assets/img/eurafrique.png'
 import ConjugEasy from '../assets/img/ConjugEasy.png'
+import MawaqitImg from '../assets/img/mawaqit.png'
 
 export default function Home() {
     // Dynamic title
@@ -56,12 +57,14 @@ export default function Home() {
     // For Project Part
     let projectData = globalJson.projects.project
     let projectArray = Object.values(projectData)
+    console.log(projectArray)
 
     const projectImgInfo = {
         WTM: WTM,
         CotizUpImg: CotizUpImg,
         EurAfrique: EurAfrique,
         ConjugEasy: ConjugEasy,
+        Mawaqit: MawaqitImg,
     }
 
     // For
