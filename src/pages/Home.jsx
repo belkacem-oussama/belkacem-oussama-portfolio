@@ -67,8 +67,6 @@ export default function Home() {
         Mawaqit: MawaqitImg,
     }
 
-    // For
-
     return (
         <div className="home-container">
             <div className="home-container-main typed-output">
