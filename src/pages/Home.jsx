@@ -46,7 +46,7 @@ export default function Home() {
 
     let globalJson = text
     // For Stack Part
-    let stackInfos = globalJson.stack
+    let stackInfos = globalJson.stack.Skills
     let stackArray = Object.values(stackInfos)
 
     const imgInfo = {
@@ -86,6 +86,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="home-container-stack">
+                <h1>{text.stack.title}</h1>
+                <p>{text.stack.paragraphe}</p>
                 <div className="home-container-stack-container">
                     {stackArray.map((element, index) => (
                         <div className="item" key={index}>

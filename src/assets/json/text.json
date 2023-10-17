@@ -4,26 +4,30 @@
     "introduction": "Moi c'est Oussama, enchanté !",
     "presentation": "Depuis le début de mon parcours en tant que dévelopeur, j'ai effectué des prestations à distance pour des sociétés commerciales, consulté pour des clients dans l'enseignement et collaboré avec des personnes talentueuses pour créer des produits numériques à la fois pour un usage professionnel et grand public. Je suis naturellement curieux et je travaille constamment l'amélioration de mes compétences.",
     "stack": {
-        "front-end": {
-            "img": "FrontEnd",
-            "title": "Front-End Developer",
-            "paragraphe": "UX/UI",
-            "mainTitle": "Langages",
-            "list": ["HTML/CSS/SCSS", "JavaScript", "React.js"]
-        },
-        "back-end": {
-            "img": "BackEnd",
-            "title": "Back-End Developer",
-            "paragraphe": "Données et sécurité.",
-            "mainTitle": "Langages",
-            "list": ["PHP", "Symfony/Laravel", "SQL"]
-        },
-        "dev-tools": {
-            "img": "Tools",
-            "title": "Dev Tools",
-            "paragraphe": "Ma trousse à outils.",
-            "mainTitle": "Langages",
-            "list": ["Docker", "Git/GitHub", "Bootstrap"]
+        "title": "Stack",
+        "paragraphe": "Ce que j'utilise au quotidien.",
+        "Skills": {
+            "front-end": {
+                "img": "FrontEnd",
+                "title": "Front-End Developer",
+                "paragraphe": "UX/UI",
+                "mainTitle": "Langages",
+                "list": ["HTML/CSS/SCSS", "JavaScript", "React.js"]
+            },
+            "back-end": {
+                "img": "BackEnd",
+                "title": "Back-End Developer",
+                "paragraphe": "Données et sécurité.",
+                "mainTitle": "Langages",
+                "list": ["PHP", "Symfony/Laravel", "SQL"]
+            },
+            "dev-tools": {
+                "img": "Tools",
+                "title": "Dev Tools",
+                "paragraphe": "Ma trousse à outils.",
+                "mainTitle": "Langages",
+                "list": ["Docker", "Git/GitHub", "Bootstrap"]
+            }
         }
     },
     "projects": {
