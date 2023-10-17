@@ -6,7 +6,7 @@
     "stack": {
         "front-end": {
             "img": "FrontEnd",
-            "title": "Front-End Developer.",
+            "title": "Front-End Developer",
             "paragraphe": "UX/UI",
             "mainTitle": "Langages",
             "list": ["HTML/CSS/SCSS", "JavaScript", "React.js"]
