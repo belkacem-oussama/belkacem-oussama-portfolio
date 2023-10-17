@@ -1,6 +1,7 @@
 import React from 'react'
-import ButtonComponent from '../components/Button.jsx'
 import { useEffect } from 'react'
+
+import ButtonComponent from '../components/Button.jsx'
 
 import Typed from 'typed.js'
 
