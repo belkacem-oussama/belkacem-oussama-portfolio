@@ -58,7 +58,6 @@ export default function Home() {
     // For Project Part
     let projectData = globalJson.projects.project
     let projectArray = Object.values(projectData)
-    console.log(projectArray)
 
     const projectImgInfo = {
         WTM: WTM,
