@@ -203,28 +203,39 @@
                     border: solid;
                     border-radius: 20px;
                     background-color: $primary-color;
+                    margin-right: auto;
+                    margin-left: auto;
 
                     @media (max-width: 480px) {
-                        font-size: 20px;
-                        padding: 7px;
+                        font-size: 16px;
+                        padding: 10px;
+                        width: 190px;
                     }
 
                     @media (min-width: 481px) {
                         font-size: 20px;
-                        padding: 7px;
+                        padding: 14px;
+                        width: 200px;
                     }
                 }
 
                 p {
-                    @media (min-width: 768px) {
-                        font-size: 20px;
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                    }
+                    @media (min-width: 481px) {
+                        font-size: 18px;
                     }
                 }
 
                 ul {
                     li {
-                        @media (min-width: 768px) {
-                            font-size: 20px;
+                        line-height: 2;
+                        @media (max-width: 480px) {
+                            font-size: 14px;
+                        }
+                        @media (min-width: 481px) {
+                            font-size: 18px;
                         }
                     }
                 }
