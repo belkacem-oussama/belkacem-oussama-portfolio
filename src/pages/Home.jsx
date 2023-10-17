@@ -1,6 +1,7 @@
 import React from 'react'
-import ButtonComponent from '../components/Button.jsx'
 import { useEffect } from 'react'
+
+import ButtonComponent from '../components/Button.jsx'
 
 import Typed from 'typed.js'
 
@@ -15,6 +16,7 @@ import WTM from '../assets/img/whats-the-movie.png'
 import CotizUpImg from '../assets/img/cotizup.png'
 import EurAfrique from '../assets/img/eurafrique.png'
 import ConjugEasy from '../assets/img/ConjugEasy.png'
+import MawaqitImg from '../assets/img/mawaqit.png'
 
 export default function Home() {
     // Dynamic title
@@ -44,7 +46,7 @@ export default function Home() {
 
     let globalJson = text
     // For Stack Part
-    let stackInfos = globalJson.stack
+    let stackInfos = globalJson.stack.Skills
     let stackArray = Object.values(stackInfos)
 
     const imgInfo = {
@@ -62,9 +64,8 @@ export default function Home() {
         CotizUpImg: CotizUpImg,
         EurAfrique: EurAfrique,
         ConjugEasy: ConjugEasy,
+        Mawaqit: MawaqitImg,
     }
-
-    // For
 
     return (
         <div className="home-container">
@@ -84,6 +85,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="home-container-stack">
+                <h1>{text.stack.title}</h1>
+                <p>{text.stack.paragraphe}</p>
                 <div className="home-container-stack-container">
                     {stackArray.map((element, index) => (
                         <div className="item" key={index}>
