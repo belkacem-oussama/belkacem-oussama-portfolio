@@ -7,6 +7,7 @@ import Loader from './components/Loader.jsx'
 
 import './assets/styles/import.scss'
 import { Route, Routes } from 'react-router-dom'
+import Project from './pages/Project.jsx'
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true)
@@ -26,6 +27,10 @@ export default function App() {
                     <Header />
                     <Routes>
                         <Route path="/" element={<Home />}></Route>
+                        <Route
+                            path="/project/:id"
+                            element={<Project />}
+                        ></Route>
                     </Routes>
                     <Footer />
                 </>
