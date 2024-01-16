@@ -39,35 +39,42 @@
                 "img": "WTM",
                 "presentation": "Jeu développé dans un groupe de 6 développeurs.",
                 "link": "https://whats-the-movie.timothe-bequet.fr/",
-                "buttonText": "Visit Website"
+                "buttonText": "See more ..."
             },
             "Second": {
                 "title": "Cotiz'Up",
                 "img": "CotizUpImg",
                 "presentation": "Amélioration du back-office existant.",
                 "link": "https://www.cotizup.com/",
-                "buttonText": "Visit Website"
+                "buttonText": "See more ..."
             },
             "Third": {
                 "title": "EurAfrique",
                 "img": "EurAfrique",
                 "presentation": "Mise en place d'une liste de gestion des  bénévoles.",
                 "link": "https://dev.eurafrique.eu/",
-                "buttonText": "Visit Website"
+                "buttonText": "See more ..."
             },
             "Fourth": {
                 "title": "ConjugEasy",
                 "img": "ConjugEasy",
                 "presentation": "Passage de ceinture de conjugaison.",
                 "link": "https://github.com/belkacem-oussama/ConjugEasy-Front",
-                "buttonText": "View repo"
+                "buttonText": "See more ..."
             },
             "Fifth": {
                 "title": "Mawaqit",
                 "img": "Mawaqit",
                 "presentation": "Support technique bénévole",
                 "link": "https://mawaqit.net/fr/",
-                "buttonText": "View Website"
+                "buttonText": "See more ..."
+            },
+            "Sixth": {
+                "title": "SFive",
+                "img": "SFive",
+                "presentation": "Gestion des créneaux de réservation",
+                "link": "https://mawaqit.net/fr/",
+                "buttonText": "See more ..."
             }
         }
     },

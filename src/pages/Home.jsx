@@ -18,6 +18,7 @@ import CotizUpImg from '../assets/img/cotizup.png'
 import EurAfrique from '../assets/img/eurafrique.png'
 import ConjugEasy from '../assets/img/ConjugEasy.png'
 import MawaqitImg from '../assets/img/mawaqit.png'
+import SFive from '../assets/img/SFive.png'
 
 export default function Home() {
     // Dynamic title
@@ -66,6 +67,7 @@ export default function Home() {
         EurAfrique: EurAfrique,
         ConjugEasy: ConjugEasy,
         Mawaqit: MawaqitImg,
+        SFive: SFive,
     }
 
     return (
