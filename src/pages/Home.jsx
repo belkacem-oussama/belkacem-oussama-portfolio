@@ -126,7 +126,7 @@ export default function Home() {
                                     <h3>{element.title} </h3>
                                     <span>
                                         <p>{element.presentation}</p>
-                                        <Link to="/project">
+                                        <Link to={`/project/${element.id}`}>
                                             <ButtonComponent
                                                 text={element.buttonText}
                                             />

@@ -35,6 +35,7 @@
         "paragraphe": "Quelques projets auxquels j'ai pu participer ou créer.",
         "project": {
             "First": {
+                "id": 1,
                 "title": "What's The Movie ?",
                 "img": "WTM",
                 "presentation": "Jeu développé dans un groupe de 6 développeurs.",
@@ -42,6 +43,7 @@
                 "buttonText": "See more ..."
             },
             "Second": {
+                "id": 2,
                 "title": "Cotiz'Up",
                 "img": "CotizUpImg",
                 "presentation": "Amélioration du back-office existant.",
@@ -49,6 +51,7 @@
                 "buttonText": "See more ..."
             },
             "Third": {
+                "id": 3,
                 "title": "EurAfrique",
                 "img": "EurAfrique",
                 "presentation": "Mise en place d'une liste de gestion des  bénévoles.",
@@ -56,6 +59,7 @@
                 "buttonText": "See more ..."
             },
             "Fourth": {
+                "id": 4,
                 "title": "ConjugEasy",
                 "img": "ConjugEasy",
                 "presentation": "Passage de ceinture de conjugaison.",
@@ -63,6 +67,7 @@
                 "buttonText": "See more ..."
             },
             "Fifth": {
+                "id": 5,
                 "title": "Mawaqit",
                 "img": "Mawaqit",
                 "presentation": "Support technique bénévole",
@@ -70,6 +75,7 @@
                 "buttonText": "See more ..."
             },
             "Sixth": {
+                "id": 6,
                 "title": "SFive",
                 "img": "SFive",
                 "presentation": "Gestion des créneaux de réservation",
