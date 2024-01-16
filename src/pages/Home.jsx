@@ -19,6 +19,7 @@ import EurAfrique from '../assets/img/eurafrique.png'
 import ConjugEasy from '../assets/img/ConjugEasy.png'
 import MawaqitImg from '../assets/img/mawaqit.png'
 import SFive from '../assets/img/SFive.png'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     // Dynamic title
@@ -125,11 +126,11 @@ export default function Home() {
                                     <h3>{element.title} </h3>
                                     <span>
                                         <p>{element.presentation}</p>
-                                        <a href={element.link} target="blank">
+                                        <Link to="/project">
                                             <ButtonComponent
                                                 text={element.buttonText}
                                             />
-                                        </a>
+                                        </Link>
                                     </span>
                                 </div>
                             </div>
