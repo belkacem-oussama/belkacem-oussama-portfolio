@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
-import Header from "./layouts/Header.jsx";
-import Home from "./pages/Home.jsx";
-import Footer from "./layouts/Footer.jsx";
-import Loader from "./components/Loader.jsx";
+import Header from './layouts/Header.jsx'
+import Home from './pages/Home.jsx'
+import Footer from './layouts/Footer.jsx'
+import Loader from './components/Loader.jsx'
 
-import "./assets/styles/import.scss";
+import './assets/styles/import.scss'
+import { Route, Routes } from 'react-router-dom'
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true)
@@ -23,7 +24,9 @@ export default function App() {
             ) : (
                 <>
                     <Header />
-                    <Home />
+                    <Routes>
+                        <Route path="/" element={<Home />}></Route>
+                    </Routes>
                     <Footer />
                 </>
             )}
