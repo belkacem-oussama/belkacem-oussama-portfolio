@@ -39,6 +39,7 @@
                 "title": "What's The Movie ?",
                 "img": "WTM",
                 "presentation": "Jeu développé dans un groupe de 6 développeurs.",
+                "technologies": ["React.JS", "SASS", "Git/GitHub"],
                 "link": "https://whats-the-movie.timothe-bequet.fr/",
                 "buttonText": "See more ..."
             },
@@ -47,6 +48,7 @@
                 "title": "Cotiz'Up",
                 "img": "CotizUpImg",
                 "presentation": "Amélioration du back-office existant.",
+                "technologies": ["React.JS", "SASS", "Git/GitHub", "Docker"],
                 "link": "https://www.cotizup.com/",
                 "buttonText": "See more ..."
             },
@@ -55,7 +57,9 @@
                 "title": "EurAfrique",
                 "img": "EurAfrique",
                 "presentation": "Mise en place d'une liste de gestion des  bénévoles.",
-                "link": "https://dev.eurafrique.eu/",
+                "decscription": "Développé pour le compte de l'association EurAfrique, ce module permet au responsable d'avoir une visibilité sur les bénévoles de son association. Un bénévole est actif ou inactif en fonction de sa disponibilité et ses informations peuvent être modifiées ou supprimées.",
+                "technologies": ["React.JS", "SASS", "Git/GitHub"],
+                "link": "https://github.com/belkacem-oussama/benevole-list",
                 "buttonText": "See more ..."
             },
             "Fourth": {
@@ -63,15 +67,14 @@
                 "title": "ConjugEasy",
                 "img": "ConjugEasy",
                 "presentation": "Passage de ceinture de conjugaison.",
+                "technologies": [
+                    "Typescript",
+                    "React.JS",
+                    "SASS",
+                    "Git/GitHub",
+                    "Node.js/Express"
+                ],
                 "link": "https://github.com/belkacem-oussama/ConjugEasy-Front",
-                "buttonText": "See more ..."
-            },
-            "Fifth": {
-                "id": 5,
-                "title": "Mawaqit",
-                "img": "Mawaqit",
-                "presentation": "Support technique bénévole",
-                "link": "https://mawaqit.net/fr/",
                 "buttonText": "See more ..."
             },
             "Sixth": {
@@ -79,7 +82,8 @@
                 "title": "SFive",
                 "img": "SFive",
                 "presentation": "Gestion des créneaux de réservation",
-                "link": "https://mawaqit.net/fr/",
+                "technologies": ["PHP/Symfony", "SASS", "Git/GitHub", "SQL"],
+                "link": "",
                 "buttonText": "See more ..."
             }
         }

@@ -1,5 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import Fade from 'react-reveal/Fade'
 
 import ButtonComponent from '../components/Button.jsx'
@@ -13,13 +15,11 @@ import PortfolioIMG from '../assets/img/portfolio-picture.png'
 import FrontEnd from '../assets/img/front-end.png'
 import BackEnd from '../assets/img/back-end.png'
 import Tools from '../assets/img/tools.png'
-import WTM from '../assets/img/whats-the-movie.png'
-import CotizUpImg from '../assets/img/cotizup.png'
-import EurAfrique from '../assets/img/eurafrique.png'
-import ConjugEasy from '../assets/img/ConjugEasy.png'
-import MawaqitImg from '../assets/img/mawaqit.png'
-import SFive from '../assets/img/SFive.png'
-import { Link } from 'react-router-dom'
+import WTM from '../assets/img/project/whats-the-movie.png'
+import CotizUpImg from '../assets/img/project/cotizup.png'
+import EurAfrique from '../assets/img/project/eurafrique.png'
+import ConjugEasy from '../assets/img/project/ConjugEasy.png'
+import SFive from '../assets/img/project/SFive.png'
 
 export default function Home() {
     // Dynamic title
@@ -67,7 +67,6 @@ export default function Home() {
         CotizUpImg: CotizUpImg,
         EurAfrique: EurAfrique,
         ConjugEasy: ConjugEasy,
-        Mawaqit: MawaqitImg,
         SFive: SFive,
     }
 
