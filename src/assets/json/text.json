@@ -17,14 +17,14 @@
             "back-end": {
                 "img": "BackEnd",
                 "title": "Back-End Developer",
-                "paragraphe": "Données et sécurité.",
+                "paragraphe": "Données et sécurité",
                 "mainTitle": "Langages",
                 "list": ["PHP", "Symfony/Laravel", "SQL"]
             },
             "dev-tools": {
                 "img": "Tools",
                 "title": "Dev Tools",
-                "paragraphe": "Ma trousse à outils.",
+                "paragraphe": "Ma trousse à outils",
                 "mainTitle": "Langages",
                 "list": ["Docker", "Git/GitHub", "Bootstrap"]
             }
