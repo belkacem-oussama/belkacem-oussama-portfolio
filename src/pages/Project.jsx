@@ -22,6 +22,9 @@ import SQLIMG from '../assets/img/techno/SQL-icon.png'
 import eurafrique1 from '../assets/img/samples/eurafrique/eurafrique1.png'
 import eurafrique2 from '../assets/img/samples/eurafrique/eurafrique2.png'
 
+import cotizup1 from '../assets/img/samples/cotizup/cotizup1.jpeg'
+import cotizup2 from '../assets/img/samples/cotizup/cotizup2.jpeg'
+
 export default function Project() {
     const { id } = useParams()
     const globalJson = Object.values(text.projects.project)
@@ -53,6 +56,7 @@ export default function Project() {
 
     const IMGByProjectMAP = {
         EurAfrique: [eurafrique1, eurafrique2],
+        "Cotiz'Up": [cotizup1, cotizup2],
     }
 
     const technoBubble = selectedProject.technologies.map(

@@ -49,6 +49,7 @@
                 "img": "CotizUpImg",
                 "presentation": "Amélioration du back-office existant.",
                 "technologies": ["React.JS", "SASS", "Git/GitHub", "Docker"],
+                "decscription": "L'amélioration du back-office existant a été réalisé en support de la Lead Dev Front-End. Ajout de différentes fonctionnalités notamment la gestion des SMS ou encore l'ajout de différents formulaires pour gérer les collaborateurs en interne. L'image se rapproche de l'intégration réalisée mais n'est qu'une photo d'illustration.",
                 "link": "https://www.cotizup.com/",
                 "buttonText": "See more ..."
             },
