@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import Fade from 'react-reveal/Fade'
 
 import ButtonComponent from '../components/Button.jsx'
 
@@ -84,52 +85,56 @@ export default function Home() {
                     <p>{text.presentation}</p>
                 </div>
             </div>
-            <div className="home-container-stack">
-                <h1>{text.stack.title}</h1>
-                <p>{text.stack.paragraphe}</p>
-                <div className="home-container-stack-container">
-                    {stackArray.map((element, index) => (
-                        <div className="item" key={index}>
-                            <div className="item-container">
-                                <img
-                                    src={imgInfo[element.img]}
-                                    alt={element.mainTitle}
-                                />
-                                <h1>{element.title}</h1>
-                                <p>{element.paragraphe}</p>
-                                <ul>
-                                    <h1>{element.mainTitle}</h1>
-                                    {element.list.map((key, index) => (
-                                        <li key={index}>{key}</li>
-                                    ))}
-                                </ul>
+            <Fade clear>
+                <div className="home-container-stack">
+                    <h1>{text.stack.title}</h1>
+                    <p>{text.stack.paragraphe}</p>
+                    <div className="home-container-stack-container">
+                        {stackArray.map((element, index) => (
+                            <div className="item" key={index}>
+                                <div className="item-container">
+                                    <img
+                                        src={imgInfo[element.img]}
+                                        alt={element.mainTitle}
+                                    />
+                                    <h1>{element.title}</h1>
+                                    <p>{element.paragraphe}</p>
+                                    <ul>
+                                        <h1>{element.mainTitle}</h1>
+                                        {element.list.map((key, index) => (
+                                            <li key={index}>{key}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="home-container-projects">
-                <h1>{text.projects.title}</h1>
-                <p>{text.projects.paragraphe}</p>
-                <div className="home-container-projects-container">
-                    {projectArray.map((element, key) => (
-                        <div className="project" key={key}>
-                            <div className="project-container">
-                                <img src={projectImgInfo[element.img]} />
-                                <h3>{element.title} </h3>
-                                <span>
-                                    <p>{element.presentation}</p>
-                                    <a href={element.link} target="blank">
-                                        <ButtonComponent
-                                            text={element.buttonText}
-                                        />
-                                    </a>
-                                </span>
+            </Fade>
+            <Fade clear>
+                <div className="home-container-projects">
+                    <h1>{text.projects.title}</h1>
+                    <p>{text.projects.paragraphe}</p>
+                    <div className="home-container-projects-container">
+                        {projectArray.map((element, key) => (
+                            <div className="project" key={key}>
+                                <div className="project-container">
+                                    <img src={projectImgInfo[element.img]} />
+                                    <h3>{element.title} </h3>
+                                    <span>
+                                        <p>{element.presentation}</p>
+                                        <a href={element.link} target="blank">
+                                            <ButtonComponent
+                                                text={element.buttonText}
+                                            />
+                                        </a>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </Fade>
             <span className="github-button">
                 <a href={text.others.ghButtonLink} target="blank">
                     <ButtonComponent text={text.others.ghButtonText} />
