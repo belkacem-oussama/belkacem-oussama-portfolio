@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import text from '../assets/json/text.json'
 
@@ -105,6 +105,9 @@ export default function Project() {
                 <a href={selectedProject.link} target="blank">
                     <ButtonComponent text="View repo" />
                 </a>
+                <Link to="/">
+                    <ButtonComponent text="Back" />
+                </Link>
             </div>
         </div>
     )

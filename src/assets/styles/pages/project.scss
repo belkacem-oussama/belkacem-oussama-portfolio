@@ -1,3 +1,25 @@
+.project-list-container {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .project-list-title {
     display: flex;
     flex-direction: row;
@@ -77,10 +99,12 @@
 
 .project-list-button {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     @media (max-width: 480px) {
         margin-bottom: 20px;
+        height: 100px;
+        flex-direction: column;
     }
 }
