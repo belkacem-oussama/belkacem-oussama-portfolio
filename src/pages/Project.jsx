@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import text from '../assets/json/text.json'
 
@@ -37,6 +38,10 @@ import wtm3 from '../assets/img/samples/wtm/wtm3.png'
 import workInProgressIMG from '../assets/img/work-in-progress.png'
 
 export default function Project() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
+
     const { id } = useParams()
     const globalJson = Object.values(text.projects.project)
 

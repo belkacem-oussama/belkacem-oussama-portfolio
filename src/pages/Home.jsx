@@ -26,6 +26,8 @@ export default function Home() {
     const el = React.useRef(null)
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+
         const typed = new Typed(el.current, {
             strings: [
                 'Web Developer',
