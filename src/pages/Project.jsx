@@ -25,6 +25,17 @@ import eurafrique2 from '../assets/img/samples/eurafrique/eurafrique2.png'
 import cotizup1 from '../assets/img/samples/cotizup/cotizup1.jpeg'
 import cotizup2 from '../assets/img/samples/cotizup/cotizup2.jpeg'
 
+import conjugeasy1 from '../assets/img/samples/conjugeasy/conjugeasy1.png'
+import conjugeasy2 from '../assets/img/samples/conjugeasy/conjugeasy2.png'
+import conjugeasy3 from '../assets/img/samples/conjugeasy/conjugeasy3.png'
+import conjugeasy4 from '../assets/img/samples/conjugeasy/conjugeasy4.png'
+
+import wtm1 from '../assets/img/samples/wtm/wtm1.png'
+import wtm2 from '../assets/img/samples/wtm/wtm2.png'
+import wtm3 from '../assets/img/samples/wtm/wtm3.png'
+
+import workInProgressIMG from '../assets/img/work-in-progress.png'
+
 export default function Project() {
     const { id } = useParams()
     const globalJson = Object.values(text.projects.project)
@@ -57,6 +68,9 @@ export default function Project() {
     const IMGByProjectMAP = {
         EurAfrique: [eurafrique1, eurafrique2],
         "Cotiz'Up": [cotizup1, cotizup2],
+        ConjugEasy: [conjugeasy1, conjugeasy2, conjugeasy3, conjugeasy4],
+        "What's The Movie ?": [wtm1, wtm2, wtm3],
+        SFive: null,
     }
 
     const technoBubble = selectedProject.technologies.map(
@@ -71,11 +85,17 @@ export default function Project() {
         )
     )
 
-    const galleryImages = IMGByProjectMAP[selectedProject.title].map(
-        (image, index) => {
-            return <img key={index} src={image} alt={`Gallery ${index + 1}`} />
-        }
-    )
+    let galleryImages
+
+    if (IMGByProjectMAP[selectedProject.title]) {
+        galleryImages = IMGByProjectMAP[selectedProject.title].map(
+            (image, index) => (
+                <img key={index} src={image} alt={`Gallery ${index + 1}`} />
+            )
+        )
+    } else {
+        galleryImages = <img src={workInProgressIMG} alt="Work in Progress" />
+    }
 
     return (
         <div className="project-list-container">
@@ -97,13 +117,13 @@ export default function Project() {
                 <span className="project-list-description-presentation">
                     <h1>Description</h1>
                     <h5>{selectedProject.presentation}</h5>
-                    <p>{selectedProject.decscription}</p>
+                    <p>{selectedProject.description}</p>
                 </span>
             </div>
             <div className="project-list-gallery">{galleryImages}</div>
             <div className="project-list-button">
                 <a href={selectedProject.link} target="blank">
-                    <ButtonComponent text="View repo" />
+                    <ButtonComponent text="See on GitHub" />
                 </a>
                 <Link to="/">
                     <ButtonComponent text="Back" />
