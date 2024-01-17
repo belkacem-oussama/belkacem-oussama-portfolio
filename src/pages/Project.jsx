@@ -1,5 +1,10 @@
 import { Link, useParams } from 'react-router-dom'
 import { useEffect } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+import { Pagination } from 'swiper/modules'
 
 import text from '../assets/json/text.json'
 
@@ -95,7 +100,9 @@ export default function Project() {
     if (IMGByProjectMAP[selectedProject.title]) {
         galleryImages = IMGByProjectMAP[selectedProject.title].map(
             (image, index) => (
-                <img key={index} src={image} alt={`Gallery ${index + 1}`} />
+                <SwiperSlide key={index}>
+                    <img key={index} src={image} alt={`Gallery ${index + 1}`} />
+                </SwiperSlide>
             )
         )
     } else {
@@ -125,7 +132,18 @@ export default function Project() {
                     <p>{selectedProject.description}</p>
                 </span>
             </div>
-            <div className="project-list-gallery">{galleryImages}</div>
+            <div className="project-list-gallery">
+                <Swiper
+                    spaceBetween={30}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                >
+                    {galleryImages}
+                </Swiper>
+            </div>
             <div className="project-list-button">
                 <a href={selectedProject.link} target="blank">
                     <ButtonComponent text="See on GitHub" />
