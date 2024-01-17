@@ -31,8 +31,8 @@
         }
     },
     "projects": {
-        "title": "Projets réalisés",
-        "paragraphe": "Quelques projets auxquels j'ai pu participer ou créer.",
+        "title": "My projects",
+        "paragraphe": "Quelques projets créés ou auxquels j'ai pu participer.",
         "project": {
             "First": {
                 "id": 1,
