@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import ScrollToTop from 'react-scroll-to-top'
 
 import Header from './layouts/Header.jsx'
 import Home from './pages/Home.jsx'
@@ -24,6 +25,7 @@ export default function App() {
                 <Loader />
             ) : (
                 <>
+                    <ScrollToTop smooth />
                     <Header />
                     <Routes>
                         <Route path="/" element={<Home />}></Route>
