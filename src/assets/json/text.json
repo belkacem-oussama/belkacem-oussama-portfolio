@@ -17,57 +17,78 @@
             "back-end": {
                 "img": "BackEnd",
                 "title": "Back-End Developer",
-                "paragraphe": "Données et sécurité.",
+                "paragraphe": "Données et sécurité",
                 "mainTitle": "Langages",
                 "list": ["PHP", "Symfony/Laravel", "SQL"]
             },
             "dev-tools": {
                 "img": "Tools",
                 "title": "Dev Tools",
-                "paragraphe": "Ma trousse à outils.",
+                "paragraphe": "Ma trousse à outils",
                 "mainTitle": "Langages",
                 "list": ["Docker", "Git/GitHub", "Bootstrap"]
             }
         }
     },
     "projects": {
-        "title": "Projets réalisés",
-        "paragraphe": "Quelques projets auxquels j'ai pu participer ou créer.",
+        "title": "My projects",
+        "paragraphe": "Quelques projets créés ou auxquels j'ai pu participer.",
         "project": {
             "First": {
+                "id": 1,
                 "title": "What's The Movie ?",
                 "img": "WTM",
                 "presentation": "Jeu développé dans un groupe de 6 développeurs.",
+                "description": "Cette application web a été réalisée avec plusieurs développeurs, le but du jeu étant de trouver le plus rapidement possible le titre du film flouté.",
+                "technologies": ["React.JS", "SASS", "Git/GitHub"],
                 "link": "https://whats-the-movie.timothe-bequet.fr/",
-                "buttonText": "Visit Website"
+                "buttonText": "See more ..."
             },
             "Second": {
+                "id": 2,
                 "title": "Cotiz'Up",
                 "img": "CotizUpImg",
                 "presentation": "Amélioration du back-office existant.",
+                "technologies": ["React.JS", "SASS", "Git/GitHub", "Docker"],
+                "description": "L'amélioration du back-office existant a été réalisé en support de la Lead Dev Front-End. Ajout de différentes fonctionnalités notamment la gestion des SMS ou encore l'ajout de différents formulaires pour gérer les collaborateurs en interne. L'image se rapproche de l'intégration réalisée mais n'est qu'une photo d'illustration.",
                 "link": "https://www.cotizup.com/",
-                "buttonText": "Visit Website"
+                "buttonText": "See more ..."
             },
             "Third": {
+                "id": 3,
                 "title": "EurAfrique",
                 "img": "EurAfrique",
                 "presentation": "Mise en place d'une liste de gestion des  bénévoles.",
-                "link": "https://dev.eurafrique.eu/",
-                "buttonText": "Visit Website"
+                "description": "Développé pour le compte de l'association EurAfrique, ce module permet au responsable d'avoir une visibilité sur les bénévoles de son association. Un bénévole est actif ou inactif en fonction de sa disponibilité et ses informations peuvent être modifiées ou supprimées.",
+                "technologies": ["React.JS", "SASS", "Git/GitHub"],
+                "link": "https://github.com/belkacem-oussama/benevole-list",
+                "buttonText": "See more ..."
             },
             "Fourth": {
+                "id": 4,
                 "title": "ConjugEasy",
                 "img": "ConjugEasy",
                 "presentation": "Passage de ceinture de conjugaison.",
+                "description": "Application web destinée à une enseignante pour faciliter le passage des ceintures de conjugaison à ses élèves. L'enseignante aura accès à une partie admin où elle pourra voir les résultats par élève.",
+                "technologies": [
+                    "Typescript",
+                    "React.JS",
+                    "SASS",
+                    "Git/GitHub",
+                    "Node.js/Express"
+                ],
                 "link": "https://github.com/belkacem-oussama/ConjugEasy-Front",
-                "buttonText": "View repo"
+                "buttonText": "See more ..."
             },
-            "Fifth": {
-                "title": "Mawaqit",
-                "img": "Mawaqit",
-                "presentation": "Support technique bénévole",
-                "link": "https://mawaqit.net/fr/",
-                "buttonText": "View Website"
+            "Sixth": {
+                "id": 6,
+                "title": "SFive",
+                "img": "SFive",
+                "presentation": "Gestion des créneaux de réservation",
+                "description": "Application web de gestion des créneaux de réservation pour un centre de foot indoor. Le projet est en cours de réalisation.",
+                "technologies": ["PHP/Symfony", "SASS", "Git/GitHub", "SQL"],
+                "link": "",
+                "buttonText": "See more ..."
             }
         }
     },

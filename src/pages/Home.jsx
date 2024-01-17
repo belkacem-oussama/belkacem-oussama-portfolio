@@ -1,5 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
+import Fade from 'react-reveal/Fade'
 
 import ButtonComponent from '../components/Button.jsx'
 
@@ -12,17 +15,19 @@ import PortfolioIMG from '../assets/img/portfolio-picture.png'
 import FrontEnd from '../assets/img/front-end.png'
 import BackEnd from '../assets/img/back-end.png'
 import Tools from '../assets/img/tools.png'
-import WTM from '../assets/img/whats-the-movie.png'
-import CotizUpImg from '../assets/img/cotizup.png'
-import EurAfrique from '../assets/img/eurafrique.png'
-import ConjugEasy from '../assets/img/ConjugEasy.png'
-import MawaqitImg from '../assets/img/mawaqit.png'
+import WTM from '../assets/img/project/whats-the-movie.png'
+import CotizUpImg from '../assets/img/project/cotizup.png'
+import EurAfrique from '../assets/img/project/eurafrique.png'
+import ConjugEasy from '../assets/img/project/ConjugEasy.png'
+import SFive from '../assets/img/project/SFive.png'
 
 export default function Home() {
     // Dynamic title
     const el = React.useRef(null)
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+
         const typed = new Typed(el.current, {
             strings: [
                 'Web Developer',
@@ -64,7 +69,7 @@ export default function Home() {
         CotizUpImg: CotizUpImg,
         EurAfrique: EurAfrique,
         ConjugEasy: ConjugEasy,
-        Mawaqit: MawaqitImg,
+        SFive: SFive,
     }
 
     return (
@@ -84,52 +89,56 @@ export default function Home() {
                     <p>{text.presentation}</p>
                 </div>
             </div>
-            <div className="home-container-stack">
-                <h1>{text.stack.title}</h1>
-                <p>{text.stack.paragraphe}</p>
-                <div className="home-container-stack-container">
-                    {stackArray.map((element, index) => (
-                        <div className="item" key={index}>
-                            <div className="item-container">
-                                <img
-                                    src={imgInfo[element.img]}
-                                    alt={element.mainTitle}
-                                />
-                                <h1>{element.title}</h1>
-                                <p>{element.paragraphe}</p>
-                                <ul>
-                                    <h1>{element.mainTitle}</h1>
-                                    {element.list.map((key, index) => (
-                                        <li key={index}>{key}</li>
-                                    ))}
-                                </ul>
+            <Fade clear>
+                <div className="home-container-stack">
+                    <h1>{text.stack.title}</h1>
+                    <p>{text.stack.paragraphe}</p>
+                    <div className="home-container-stack-container">
+                        {stackArray.map((element, index) => (
+                            <div className="item" key={index}>
+                                <div className="item-container">
+                                    <img
+                                        src={imgInfo[element.img]}
+                                        alt={element.mainTitle}
+                                    />
+                                    <h1>{element.title}</h1>
+                                    <p>{element.paragraphe}</p>
+                                    <ul>
+                                        <h1>{element.mainTitle}</h1>
+                                        {element.list.map((key, index) => (
+                                            <li key={index}>{key}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="home-container-projects">
-                <h1>{text.projects.title}</h1>
-                <p>{text.projects.paragraphe}</p>
-                <div className="home-container-projects-container">
-                    {projectArray.map((element, key) => (
-                        <div className="project" key={key}>
-                            <div className="project-container">
-                                <img src={projectImgInfo[element.img]} />
-                                <h3>{element.title} </h3>
-                                <span>
-                                    <p>{element.presentation}</p>
-                                    <a href={element.link} target="blank">
-                                        <ButtonComponent
-                                            text={element.buttonText}
-                                        />
-                                    </a>
-                                </span>
+            </Fade>
+            <Fade clear>
+                <div className="home-container-projects">
+                    <h1>{text.projects.title}</h1>
+                    <p>{text.projects.paragraphe}</p>
+                    <div className="home-container-projects-container">
+                        {projectArray.map((element, key) => (
+                            <div className="project" key={key}>
+                                <div className="project-container">
+                                    <img src={projectImgInfo[element.img]} />
+                                    <h3>{element.title} </h3>
+                                    <span>
+                                        <p>{element.presentation}</p>
+                                        <Link to={`/project/${element.id}`}>
+                                            <ButtonComponent
+                                                text={element.buttonText}
+                                            />
+                                        </Link>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </Fade>
             <span className="github-button">
                 <a href={text.others.ghButtonLink} target="blank">
                     <ButtonComponent text={text.others.ghButtonText} />

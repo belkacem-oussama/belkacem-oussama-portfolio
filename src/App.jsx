@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
+import ScrollToTop from 'react-scroll-to-top'
 
-import Header from "./layouts/Header.jsx";
-import Home from "./pages/Home.jsx";
-import Footer from "./layouts/Footer.jsx";
-import Loader from "./components/Loader.jsx";
+import Header from './layouts/Header.jsx'
+import Home from './pages/Home.jsx'
+import Footer from './layouts/Footer.jsx'
+import Loader from './components/Loader.jsx'
 
-import "./assets/styles/import.scss";
+import './assets/styles/import.scss'
+import { Route, Routes } from 'react-router-dom'
+import Project from './pages/Project.jsx'
 
 export default function App() {
     const [isLoading, setIsLoading] = useState(true)
@@ -22,8 +25,15 @@ export default function App() {
                 <Loader />
             ) : (
                 <>
+                    <ScrollToTop smooth />
                     <Header />
-                    <Home />
+                    <Routes>
+                        <Route path="/" element={<Home />}></Route>
+                        <Route
+                            path="/project/:id"
+                            element={<Project />}
+                        ></Route>
+                    </Routes>
                     <Footer />
                 </>
             )}

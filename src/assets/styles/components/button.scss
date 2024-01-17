@@ -10,10 +10,11 @@
     border-radius: 100px;
     padding: 10px;
     width: 200px;
+    font-weight: bold;
 
     &:hover {
-        background-color: $secondary-color;
-        color: $primary-color;
+        background-color: #172b75;
+        color: white;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
 }
